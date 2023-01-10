@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="icons/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+</head>
+<body class="sim__menuleft__slider">
+    <div class="initial__loading"></div>
+     <!-- sidebar  -->
+     <aside class="sim__menuleft">
+        <div class="sim__menuleft__outer">
+            <div class="sim__menuleft__brand sim__menuleft__brand--bg">
+                <img class="sim__menuleft__brand__logo" src="images/buffer.svg"  alt="logo">
+                <h3 class="sim__menuleft__brand__name">simplex</h3>
+            </div>
+
+            <div class="sim__menuleft__content sim__menuleft__content--scroll">
+               <ul class="sim__menuleft__navigation">
+                   <li class="sim__menuleft__category">
+                    Menu
+                   </li>
+                   <li class="sim__menuleft__item">
+                       <a href="index.html" class="sim__menuleft__item__link">
+                           <i class="sim__menuleft__item__icon las la-border-all"></i>
+                           <span class="sim__menuleft__item__title">Dashboard</span>
+                       </a>
+                   </li>
+                   <li class="sim__menuleft__category">
+                    App
+                   </li>
+                   <li class="sim__menuleft__item">
+                    <a href="form.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-eraser"></i>
+                        <span class="sim__menuleft__item__title">Forms</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="tables.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-table"></i>
+                        <span class="sim__menuleft__item__title">Tables</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="apex.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-chart-bar"></i>
+                        <span class="sim__menuleft__item__title">Charts</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="plans.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-coins"></i>
+                        <span class="sim__menuleft__item__title">Pricing Plans</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="email.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-envelope"></i>
+                        <span class="sim__menuleft__item__title">Email</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="invoice.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-file-invoice"></i>
+                        <span class="sim__menuleft__item__title">Invoice</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="contacts.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-address-book"></i>
+                        <span class="sim__menuleft__item__title">Contacts</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__category">
+                    Pages
+                   </li>
+                   <li class="sim__menuleft__item sim__menuLeft__submenu">
+                    <a href="javascript:void(0)" class="sim__menuleft__item__link sim__menuLeft__submenu--toggled">
+                        <i class="sim__menuleft__item__icon las la-user-circle"></i>
+                        <span class="sim__menuleft__item__title sim__submenu__title">Authentication</span>
+                    </a>
+                    <ul class="sim__menuLeft__item__submenu">
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='login.html'>Login</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='register.html'>Registartion</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='forgotpassword.html'>Forgot Password</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='resetpassword.html'>Password Reset</a></li>
+                    </ul>
+                </li>
+               </ul>
+            </div>
+        </div>
+    </aside>
+<!-- //////////////////////////////// -->
+    <div class="sim__layout">
+
+            <!-- header  -->
+        <header class="sim__header">
+                <div class="sim__header__trigger">
+                    <i class="las la-align-left sim__header__icon"></i>
+                </div>
+                <div class="sim__header_content">
+                    <div class="sim__header_fullscreen">
+                        <i class="las la-expand"></i>
+                    </div>
+                    <div class="sim__header__notify">
+                        <img class="sim__header__notify__img" src="images/bell.svg" alt="">
+                        <span class="sim__header__notify__count">3</span>
+                        <div class="sim__header__notify__area">
+                            <div class="sim__header__notify__header">
+                                <span class="sim__header__notify__cap">Notifications</span>
+                                <a class="sim__header__notify__link" href="#">View All</a>
+                            </div>
+                            <div class="sim__header__notify__body">
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-primary"><i class="las la-user-plus"></i></div>
+                                    <p class="sim__header__notify__details">New User Registered<small class="sim__header__notify__time"><i class="las la-clock"></i>2 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-info"><i class="las la-shopping-cart"></i></div>
+                                    <p class="sim__header__notify__details">Your order is placed<small class="sim__header__notify__time"><i class="las la-clock"></i>3 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-success"><i class="las la-comments"></i></div>
+                                    <p class="sim__header__notify__details">Jaclyn Brunswick commented on Dashboard<small class="sim__header__notify__time"><i class="las la-clock"></i>5 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-danger"><i class="las la-exclamation-triangle"></i></div>
+                                    <p class="sim__header__notify__details">Please Log Your Time Sheets<small class="sim__header__notify__time"><i class="las la-clock"></i>7 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-warning"><i class="las la-shipping-fast"></i></div>
+                                    <p class="sim__header__notify__details">Your item is shipped<small class="sim__header__notify__time"><i class="las la-clock"></i>10 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-danger"><i class="las la-heart"></i></div>
+                                    <p class="sim__header__notify__details">Carlos Crouch liked Admin<small class="sim__header__notify__time"><i class="las la-clock"></i>days ago</small></p>
+                                </a>
+                            </div>
+                            <div class="sim__header__notify__footer">
+                                <a class="sim__header__notify__seemore" href="#"><i class="las la-arrow-circle-right"></i>View More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sim__header__userwarapper">
+                        <img class="sim__header_userimg" src="images/user3.jpeg" width="36px" height="36px" alt="">
+                        <span class="sim__header__userrole">Admin<i class="las la-angle-down"></i></span>
+                        <div class="sim__header__submenu">
+                            <a class="sim__header__submenu__link" href=""><i class="las la-user-circle"></i></i>My Account</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-cog"></i>Settings</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-question-circle"></i>Support</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-lock"></i>Lock Screen</a>
+                            <div class="sim__header__submenu__divider"></div>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-sign-out-alt"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- //////////////////////////////// -->
+
+        <div class="sim__layout__content">
+            <h4 class="sim__header__title">Invoice</h4>
+             <div class="sim__invoice">
+                 <div class="sim__invoice__inner">
+                    <div class="sim__row sim__row--col3 mt-1">
+                        <div class="sim__col bx-none">
+                           <img src="images/simxlogo.PNG" alt="">
+                        </div>
+                        <div class="sim__col bx-none">
+                            <div class="sim__invoice__header">
+                                <span>Project</span>
+                                <h4>RAIZE Platform</h4>
+                            </div>
+                            <div class="sim__invoice__address">
+                               <span>Bill From</span>
+                               <h4>Simplex Technologies, Inc</h4>
+                               <p>
+                                   1000 Market St <br>
+                                   San Francisco, <br>
+                                   CA 94102.
+                               </p>
+                            </div>
+                        </div>
+                        <div class="sim__col bx-none">
+                            <div class="sim__invoice__header">
+                                <span>Invoice No.</span>
+                                <h4>2021-92-239</h4>
+                            </div>
+                            <div class="sim__invoice__address">
+                                <span>Bill to</span>
+                                <h4>John Doe</h4>
+                                <p>
+                                    5905 Wilshire Blvd <br>
+                                    Los Angeles, <br>
+                                    CA 90036.
+                                </p>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="sim__row sim__row--col3">
+                        <div class="sim__col bx-none">
+                            <div class="sim__invoice__header">
+                                <span>Issue Date</span>
+                                <p><i class="las la-calendar"></i>Aug 9, 2021</p>
+                            </div>
+                        </div>
+                        <div class="sim__col bx-none">
+                            <div class="sim__invoice__header">
+                                <span>Due Date</span>
+                                <p><i class="las la-calendar"></i>Sep 3, 2021</p>
+                            </div>
+                        </div>
+                        <div class="sim__col bx-none">
+                            <div class="sim__invoice__header">
+                                <span>Services Through</span>
+                                <p><i class="las la-calendar"></i>Jul 1, 2021 - Jul 31, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sim__row sim__row--col1">
+                        <div class="sim__col bx-none">
+                            <div class="sim__col__body">
+                                <div class="sim__table sim__invoice__table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                            <th class="text-center">No</th>
+                                            <th class="text-left">Items</th>
+                                            <th class="text-center">Qty</th>
+                                            <th class="text-right">Price</th>
+                                            <th class="text-right">Amount</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-bold text-center">1</td>
+                                                <td>Logo Design</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">$400</td>
+                                                <td class="text-right">$400</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-center">2</td>
+                                                <td>Website wireframe for 2 pages</td>
+                                                <td class="text-center">4</td>
+                                                <td class="text-right">$1,500</td>
+                                                <td class="text-right">$6,000</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-center">3</td>
+                                                <td>PSD to HTML coding</td>
+                                                <td class="text-center">3</td>
+                                                <td class="text-right">$520</td>
+                                                <td class="text-right">$1,560</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-center">4</td>
+                                                <td>E-commerce Development</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-right">$800</td>
+                                                <td class="text-right">$1,600</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold text-center">5</td>
+                                                <td>Design and layout of 2 pages in Photoshop</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-right">$720</td>
+                                                <td class="text-right">$1,440</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-right">TOTAL</td>
+                                                <td class="text-right">$11,000</td>
+                                               
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+                                       
+                                </div>
+                                <div class="sim__invoice__btn-group">
+                                    <button class="sim__invoice__btn sim__invoice__btn--pay"><i class="las la-wallet"></i>Pay Invoice</button>
+                                    <button class="sim__invoice__btn sim__invoice__btn--send"><i class="las la-paper-plane"></i>Send Invoice</button>
+                                    <button class="sim__invoice__btn sim__invoice__btn--print"><i class="las la-print"></i>Print Invoice</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sim__footer">
+        <div class="sim__footer__inner">
+            <span class="sim__footer__inner__text">&copy;&nbsp;<span id="year"></span>&nbsp;SIMPLEX ADMIN - All Rights Reserved.</span>
+        </div>
+    </footer>
+<!-- ///////////////////////////////// -->
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $('.sim__menuLeft__submenu--toggled').click(function () {
+      $(this).next('.sim__menuLeft__item__submenu').slideToggle(400);
+      $(this).toggleClass('active-submenu');
+    });
+  </script>
+</html>
