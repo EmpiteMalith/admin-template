@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f8f8fb;
+}
+
+.fl-right {
+    float: right;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.sim__auth__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sim__auth__bg {
+    background-image: url('../images/loginbg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sim__auth__bg2 {
+    background-image: url('/images/2650401.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sim__auth__container .sim__auth__box {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    padding: 10px 20px;
+}
+
+.sim__auth__box .sim__auth__box__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sim__auth__box .sim__auth__box__header .sim__auth__box__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.sim__auth__box .sim__auth__welcometext {
+    font-weight: 500;
+    color: #5E5873;
+    font-size: 1.2rem;
+}
+
+.sim__auth__box .sim__auth__welcomedesc {
+    color: #6e6b7b;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.sim__auth__form .sim__auth__form__row {
+    margin-top: 1rem;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5e5873;
+    line-height: 17px;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__input {
+    display: block;
+    width: 100%;
+    height: 2.714rem;
+    padding: .438rem 1rem;
+    line-height: 1.45;
+    color: #6E6B7B;
+    background-color: #FFF;
+    border: 1px solid #D8D6DE;
+    border-radius: .357rem;
+    outline: none !important;
+    box-shadow: none !important;
+    margin-top: 0.5rem;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__btn {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px;
+    border-radius: .357rem;
+    cursor: pointer;
+    background-color: #556ee6;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__btn:hover {
+    opacity: 0.8;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__checkbox {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    background-color: #FFF;
+    border: 1px solid #D8D6DE;
+    border-radius: .357rem;
+}
+
+.sim__auth__form .sim__auth__form__row .sim__auth__form__checkboxtext {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6e6b7b;
+    line-height: 17px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.sim__auth__form__link {
+    color: #556ee6 !important;
+}
+
+.sim__auth__form .sim__auth__form__action {
+    font-weight: 400;
+    font-size: 15px;
+    color: #6e6b7b;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.sim__auth__signintext {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6e6b7b;
+    text-align: center;
+}
+
+.sim__auth__form .sim__auth__form__divider {
+    position: relative;
+}
+
+.sim__auth__signintext::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 125px;
+    border-top: 1px solid #EBE9F1;
+    right: 65%;
+}
+
+.sim__auth__signintext::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 125px;
+    border-top: 1px solid #EBE9F1;
+    left: 65%;
+}
+
+.sim__auth__form .sim__auth__form__social {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.sim__auth__form__social .sim__col__social__icon {
+    color: #fff!important;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.sim__auth__form__social .sim__col__social__icon:hover {
+    opacity: 0.8;
+}
+
+.icon--fb {
+    background-color: #556ee6!important;
+}
+
+.icon--git {
+    background-color: #444 !important;
+}
+
+.icon--google {
+    background-color: #DD4B39 !important;
+}

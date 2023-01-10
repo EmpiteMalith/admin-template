@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="icons/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js" integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw==" crossorigin="anonymous"></script>
+</head>
+<body class="sim__menuleft__slider">
+    <div class="initial__loading"></div>
+     <!-- sidebar  -->
+     <aside class="sim__menuleft">
+        <div class="sim__menuleft__outer">
+            <div class="sim__menuleft__brand sim__menuleft__brand--bg">
+                <img class="sim__menuleft__brand__logo" src="images/buffer.svg"  alt="logo">
+                <h3 class="sim__menuleft__brand__name">simplex</h3>
+            </div>
+
+            <div class="sim__menuleft__content sim__menuleft__content--scroll">
+               <ul class="sim__menuleft__navigation">
+                   <li class="sim__menuleft__category">
+                    Menu
+                   </li>
+                   <li class="sim__menuleft__item">
+                       <a id="home-page" href="index.html" class="sim__menuleft__item__link dasboard">
+                           <i class="sim__menuleft__item__icon las la-border-all"></i>
+                           <span class="sim__menuleft__item__title">Dashboard</span>
+                       </a>
+                   </li>
+                   <li class="sim__menuleft__category">
+                    App
+                   </li>
+                   <li class="sim__menuleft__item">
+                    <a href="form.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-eraser"></i>
+                        <span class="sim__menuleft__item__title">Forms</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="tables.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-table"></i>
+                        <span class="sim__menuleft__item__title">Tables</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="apex.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-chart-bar"></i>
+                        <span class="sim__menuleft__item__title">Charts</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="plans.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-coins"></i>
+                        <span class="sim__menuleft__item__title">Pricing Plans</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="email.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-envelope"></i>
+                        <span class="sim__menuleft__item__title">Email</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="invoice.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-file-invoice"></i>
+                        <span class="sim__menuleft__item__title">Invoice</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__item">
+                    <a href="contacts.html" class="sim__menuleft__item__link">
+                        <i class="sim__menuleft__item__icon las la-address-book"></i>
+                        <span class="sim__menuleft__item__title">Contacts</span>
+                    </a>
+                </li>
+                <li class="sim__menuleft__category">
+                    Pages
+                   </li>
+                   <li class="sim__menuleft__item sim__menuLeft__submenu">
+                    <a href="javascript:void(0)" class="sim__menuleft__item__link sim__menuLeft__submenu--toggled">
+                        <i class="sim__menuleft__item__icon las la-user-circle"></i>
+                        <span class="sim__menuleft__item__title sim__submenu__title">Authentication</span>
+                    </a>
+                    <ul class="sim__menuLeft__item__submenu">
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='login.html'>Login</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='register.html'>Registartion</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='forgotpassword.html'>Forgot Password</a></li>
+                        <li class="sim__menuleft__item"><a class="sim__menuleft__item__link" target="_blank" href='resetpassword.html'>Password Reset</a></li>
+                    </ul>
+                </li>
+               </ul>
+            </div>
+        </div>
+    </aside>
+<!-- //////////////////////////////// -->
+    <div class="sim__layout">
+
+            <!-- header  -->
+        <header class="sim__header">
+                <div class="sim__header__trigger">
+                    <i class="las la-align-left sim__header__icon"></i>
+                </div>
+                <div class="sim__header_content">
+                    <div class="sim__header_fullscreen">
+                        <i class="las la-expand"></i>
+                    </div>
+                    <div class="sim__header__notify">
+                        <img class="sim__header__notify__img" src="images/bell.svg" alt="">
+                        <span class="sim__header__notify__count">3</span>
+                        <div class="sim__header__notify__area">
+                            <div class="sim__header__notify__header">
+                                <span class="sim__header__notify__cap">Notifications</span>
+                                <a class="sim__header__notify__link" href="#">View All</a>
+                            </div>
+                            <div class="sim__header__notify__body">
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-primary"><i class="las la-user-plus"></i></div>
+                                    <p class="sim__header__notify__details">New User Registered<small class="sim__header__notify__time"><i class="las la-clock"></i>2 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-info"><i class="las la-shopping-cart"></i></div>
+                                    <p class="sim__header__notify__details">Your order is placed<small class="sim__header__notify__time"><i class="las la-clock"></i>3 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-success"><i class="las la-comments"></i></div>
+                                    <p class="sim__header__notify__details">Jaclyn Brunswick commented on Dashboard<small class="sim__header__notify__time"><i class="las la-clock"></i>5 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-danger"><i class="las la-exclamation-triangle"></i></div>
+                                    <p class="sim__header__notify__details">Please Log Your Time Sheets<small class="sim__header__notify__time"><i class="las la-clock"></i>7 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-warning"><i class="las la-shipping-fast"></i></div>
+                                    <p class="sim__header__notify__details">Your item is shipped<small class="sim__header__notify__time"><i class="las la-clock"></i>10 hours ago</small></p>
+                                </a>
+                                <a href="#" class="sim__header__notify__item">
+                                    <div class="sim__header__notify__icon c-danger"><i class="las la-heart"></i></div>
+                                    <p class="sim__header__notify__details">Carlos Crouch liked Admin<small class="sim__header__notify__time"><i class="las la-clock"></i>days ago</small></p>
+                                </a>
+                            </div>
+                            <div class="sim__header__notify__footer">
+                                <a class="sim__header__notify__seemore" href="#"><i class="las la-arrow-circle-right"></i>View More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sim__header__userwarapper">
+                        <img class="sim__header_userimg" src="images/user3.jpeg" width="36px" height="36px" alt="">
+                        <span class="sim__header__userrole">Admin</span>
+                        <div class="sim__header__submenu">
+                            <a class="sim__header__submenu__link" href=""><i class="las la-user-circle"></i></i>My Account</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-cog"></i>Settings</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-question-circle"></i>Support</a>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-lock"></i>Lock Screen</a>
+                            <div class="sim__header__submenu__divider"></div>
+                            <a class="sim__header__submenu__link" href=""><i class="las la-sign-out-alt"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- //////////////////////////////// -->
+
+        <div class="sim__layout__content">
+                <div class="sim__card">
+                    <div class="sim__card__single">
+                        <div class="sim__card__details">
+                            <h2 class="sim__card__count">230k</h1>
+                            <span class="sim__card__text">Sales</span>
+                        </div>
+                        <div class="sim__card__icon c-primary">
+                            <i class="lar la-copy"></i>
+                        </div>
+                    </div>
+                    <div class="sim__card__single">
+                        <div class="sim__card__details">
+                            <h2 class="sim__card__count">8.549k</h1>
+                            <span class="sim__card__text">Customers</span>
+                        </div>
+                        <div class="sim__card__icon c-info">
+                            <i class="las la-user"></i>
+                        </div>
+                    </div>
+                    <div class="sim__card__single">
+                        <div class="sim__card__details">
+                            <h2 class="sim__card__count">1.423k</h1>
+                            <span class="sim__card__text">Products</span>
+                        </div>
+                        <div class="sim__card__icon c-danger">
+                            <i class="las la-cube"></i>
+                        </div>
+                    </div>
+                    <div class="sim__card__single">
+                        <div class="sim__card__details">
+                            <h2 class="sim__card__count">$9745</h1>
+                            <span class="sim__card__text">Revenue</span>
+                        </div>
+                        <div class="sim__card__icon c-success">
+                            <i class="las la-dollar-sign"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="sim__row sim__row--col3">
+                    <div class="sim__col sim__col--p">
+                        <div class="sim__col__header">
+                            <div class="sim__col__header__details">
+                                <h4 class="sim__col__title">Browser States</h4>
+                                <p class="sim__muted">Counter April 2021</p>
+                            </div>
+                           <div class="sim__col__header__dropdown">
+                            <i class="las la-ellipsis-v"></i>
+                           </div>
+                            
+                        </div>
+                       <div class="sim__col__body">
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <img class="sim__col__img" src="images/Chrome.svg" height="30" alt="Google Chrome Browser">
+                                    <h6 class="sim__col__text">Google Chrome</h6>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text">54.4%</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <img class="sim__col__img" src="images/safari.svg" height="30" alt="Google Chrome Browser">
+                                    <h6 class="sim__col__text">Apple Safari</h6>
+                                 
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text">6.1%</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <img class="sim__col__img" src="images/Firefox.svg" height="30" alt="Google Chrome Browser">
+                                    <h6 class="sim__col__text">Mozilla Firefox</h6>
+                                 
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text">14.5%</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <img class="sim__col__img" src="images/opera.svg" height="30" alt="Google Chrome Browser">
+                                    <h6 class="sim__col__text">Opera Mini</h6>
+                                 
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text">2.8%</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <img class="sim__col__img" src="images/microsoft-edge.svg" height="30" alt="Google Chrome Browser">
+                                    <h6 class="sim__col__text">Microsoft Edge</h6>
+                                 
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text">24.4%</span>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="sim__col sim__col--p">
+                        <div class="sim__col__header">
+                            <div class="sim__col__header__details">
+                                <h4 class="sim__col__title">Social Source
+                                </h4>
+                            </div>
+                           <div class="sim__col__header__dropdown">
+                            <i class="las la-question-circle"></i>
+                           </div>
+                            
+                        </div>
+                       <div class="sim__col__body">
+                            <div class="sim__col__social">
+                                <span class="sim__col__social__logo"><i class="lab la-facebook"></i></span>
+                                <h5 class="sim__col__social__sale">Facebook&nbsp;-<span class="text-muted">&nbsp;125 sales</span></h5>
+                                <p class="sim__col__social__desc">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus tincidunt.</p>
+                                 <a class="sim__col__social__link" href="">Learn more<i class="las la-angle-right"></i></a>   
+                            </div>
+
+                            <div class="sim__col__socialmedia">
+                                <div class="sim__col__socialmedia__info text-center">
+                                    <span class="sim__col__socialmedia__icon sim__col__socialmedia__icon--fb"><i class="lab la-facebook"></i></span>
+                                    <h5 class="sim__col__socialmedia__name">Facebook</h5>
+                                    <span class="sim__col__socialmedia__sales">125 sales</span>
+                                </div>
+                                <div class="sim__col__socialmedia__info text-center">
+                                    <span class="sim__col__socialmedia__icon sim__col__socialmedia__icon--twitter"><i class="lab la-twitter"></i></span>
+                                    <h5 class="sim__col__socialmedia__name">Twitter</h5>
+                                    <span class="sim__col__socialmedia__sales">112 sales</span>
+                                </div> 
+                                <div class="sim__col__socialmedia__info text-center">
+                                    <span class="sim__col__socialmedia__icon sim__col__socialmedia__icon--instagram"><i class="lab la-instagram"></i></span>
+                                    <h5 class="sim__col__socialmedia__name">Instagram</h5>
+                                    <span class="sim__col__socialmedia__sales">104 sales</span>
+                                </div>   
+                            </div>
+                            
+                            
+                            
+                        
+                       </div>
+                    </div>
+
+                    <div class="sim__col sim__col--p">
+                        <div class="sim__col__header">
+                            <div class="sim__col__header__details">
+                                <h4 class="sim__col__title">Transactions
+                                </h4>
+                            </div>
+                            <div class="sim__col__header__dropdown">
+                                <i class="las la-ellipsis-v"></i>
+                               </div>
+                        </div>
+                        <div class="sim__col__body">
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <div class="sim__col__media__avatar c-primary">
+                                        <i class="las la-wallet"></i>
+                                    </div>
+                                    <div class="sim__col__media__content">
+                                        <h6 class="sim__col__text">Wallet</h6>
+                                        <small class="sim__col__stext">Starbucks</small>
+                                    </div>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text text-danger fw-600">- $74</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <div class="sim__col__media__avatar c-success">
+                                        <i class="las la-check"></i>
+                                    </div>
+                                    <div class="sim__col__media__content">
+                                        <h6 class="sim__col__text">Bank Transfer</h6>
+                                        <small class="sim__col__stext">Add Money</small>
+                                    </div>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text text-success fw-600">+ $480</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <div class="sim__col__media__avatar c-danger">
+                                        <i class="las la-dollar-sign"></i>
+                                    </div>
+                                    <div class="sim__col__media__content">
+                                        <h6 class="sim__col__text">Paypal</h6>
+                                        <small class="sim__col__stext">Add Money
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text text-success fw-600">+ $590</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <div class="sim__col__media__avatar c-warning">
+                                        <i class="las la-credit-card"></i>
+                                    </div>
+                                    <div class="sim__col__media__content">
+                                        <h6 class="sim__col__text">Mastercard</h6>
+                                        <small class="sim__col__stext">Ordered Food
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text text-danger fw-600">- $23</span>
+                                </div>
+                            </div>
+                            <div class="sim__col__browser__status">
+                                <div class="sim__col__media">
+                                    <div class="sim__col__media__avatar c-success">
+                                        <i class="las la-chart-line"></i>
+                                    </div>
+                                    <div class="sim__col__media__content">
+                                        <h6 class="sim__col__text">Transfer</h6>
+                                        <small class="sim__col__stext">Refund</small>
+                                    </div>
+                                </div>
+                                <div class="sim__col__details">
+                                    <span class="sim__col__text text-success fw-600">+ $98</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sim__row sim__row--col1">
+                    <div class="sim__col">
+                        <div class="sim__col__header sim__col--p">
+                            <div class="sim__col__header__details">
+                                <h4 class="sim__col__title">Latest Transaction <ion-icon name="chevron-down-outline"></ion-icon></h4>
+                            </div>
+                        </div>
+                        <div class="sim__col__body p-lr1">
+                            <div class="sim__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                        <th class="text-left">Order ID</th>
+                                        <th class="text-left">Billing Name</th>
+                                        <th class="text-left">Date</th>
+                                        <th class="text-center">Total</th>
+                                        <th class="text-left">Payment Status</th>
+                                        <th class="text-left">Payment Method</th>
+                                        <th class="text-center">View Details</th>
+                                    </tr>
+                                </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="fw-bold" href="#"> #211226 </a></td>
+                                            <td>Maria Anders</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-success">Paid</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/visa.svg" alt="">Visa</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="#"> #211226 </a></td>
+                                            <td>Christina Berglund</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-danger">Chargeback</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/discover.svg" alt="">Discover</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="/dashboard"> #211226 </a></td>
+                                            <td>Francisco Chang</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-success">Paid</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/mastercard.svg" alt="">Mastercard</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="/dashboard"> #211226 </a></td>
+                                            <td>Neal Matthews</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-warning">Refund</span></td>
+                                            <td><img class="align-middle credit-card paypal-border" height="20" src="images/paypal.svg" alt="">Paypal</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="fw-bold" href="#"> #211226 </a></td>
+                                            <td>Roland Mendel</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-success">Paid</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/amex.svg" alt="">AMEX</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="#"> #211226 </a></td>
+                                            <td>Yoshi Tannamuri</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-danger">Chargeback</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/discover.svg" alt="">Discover</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="/dashboard"> #211226 </a></td>
+                                            <td>Giovanni Rovelli</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-success">Paid</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/visa.svg" alt="">Visa</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="text-body fw-bold" href="/dashboard"> #211226 </a></td>
+                                            <td>John Doe</td>
+                                            <td>10 Dec, 2021</td>
+                                            <td class="text-center">$400</td>
+                                            <td><span class="badge-pill c-warning">Refund</span></td>
+                                            <td><img class="align-middle credit-card" height="20" src="images/mastercard.svg" alt="">Mastercard</td>
+                                            <td class="text-center"><button type="button" class="sim__btn__viewdetails">View Details</button></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+    
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="sim__footer">
+        <div class="sim__footer__inner">
+            <span class="sim__footer__inner__text">&copy;&nbsp;<span id="year"></span>&nbsp;SIMPLEX ADMIN - All Rights Reserved.</span>
+        </div>
+    </footer>
+<!-- ///////////////////////////////// -->
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $('.sim__menuLeft__submenu--toggled').click(function () {
+    $(this).next('.sim__menuLeft__item__submenu').slideToggle(400);
+    $(this).toggleClass('active-submenu');
+  });
+</script>
+</html>

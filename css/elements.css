@@ -1,0 +1,351 @@
+/* 12 Column Grid & Forms */
+
+.col-1 {
+    width: 8.33333333%;
+}
+
+.col-2 {
+    width: 16.6666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333333%;
+}
+
+.col-5 {
+    width: 41.6666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333333%;
+}
+
+.col-8 {
+    width: 66.666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333333%;
+}
+
+.col-11 {
+    width: 91.6666666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*=col-] {
+    position: relative;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.sim__header__title {
+    font-weight: 600;
+    font-size: 17px;
+    color: #495057;
+    text-transform: uppercase;
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.sim__form__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #495057;
+    text-transform: capitalize;
+    margin: 0rem 0rem 1.2rem 0rem;
+}
+
+.sim__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+.sim__form {
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.sim__form .sim__form__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+.sim__form__group {
+    margin-bottom: 1rem;
+}
+
+.sim__form__label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #495057;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sim__form__control {
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    outline: none !important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .47rem .75rem;
+    font-size: .8rem;
+    border-radius: .25rem;
+    padding: 8px 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #556ee6;
+    border-color: #556ee6;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #82868B!important;
+    background-color: transparent;
+    color: #82868B;
+}
+
+.sim__form__icon__area {
+    position: relative;
+}
+
+.sim__form__icon__area .sim__form__control {
+    padding-left: 2rem;
+}
+
+.sim__form__icon__area .sim__form__input__icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #82868B;
+    font-size: 18px !important;
+}
+
+.inline-form-label {
+    padding: 8px 0px;
+}
+
+/**********Dropdowns**************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+  }
+  
+  .dropdown > label,
+  .dropdown > a[role="button"] {
+    display: inline-block;
+    padding: 6px 15px;
+    color: #333;
+    line-height: 1.5em;
+    text-decoration: none;
+    border: 1px solid #8c8c8c;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .dropdown > label:hover,
+  .dropdown > a[role="button"]:hover,
+  .dropdown > a[role="button"]:focus {
+    border-color: #333;
+  }
+  
+  .dropdown > label:after,
+  .dropdown > a[role="button"]:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: 6px;
+  }
+  
+  .dropdown > ul {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    left: -100vw;
+    top: calc(1.5em + 14px);
+    border: 1px solid #8c8c8c;
+    background: #fff;
+    padding: 6px 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  }
+  
+  .dropdown > ul a {
+    display: block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown > ul a:hover,
+  .dropdown > ul a:focus {
+    background: #ececec;
+  }
+  
+  .dropdown > input[type="checkbox"]:checked ~ ul,
+  .dropdown > ul:target {
+    left: 0;
+  }
+  
+  .dropdown > [type="checkbox"]:checked + label:after,
+  .dropdown > ul:target ~ a:after {
+    content: "\f0d8";
+  }
+  
+  .dropdown a.close {
+    display: none;
+  }
+  
+  .dropdown > ul:target ~ a.close {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-indent: -100vw;
+    z-index: 1000;
+  }
+
+  .select-dropdown select{
+      border: none !important;
+  }
+  .select-dropdown option{
+    border: none !important;
+}
+
+
+.ckb-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .ckb-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 1px solid #d6d8db;
+    border-radius: 3px;
+  }
+  
+
+  
+  /* When the checkbox is checked, add a blue background */
+  .ckb-container input:checked ~ .checkmark {
+    background-color: #556ee6;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .ckb-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .ckb-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+/********************************/
+
+@media only screen and (max-width:768px) {
+    [class*=col-] {
+        flex-basis: 100%;
+    }
+    .inline-form-label {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:560px) {}
