@@ -1,4 +1,4 @@
-# admin-template
+# Admin Template
 HTML, CSS, JavaScript and jQuery Admin Dashboard Theme
 
 # Demo
